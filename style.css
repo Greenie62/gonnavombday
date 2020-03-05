@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    font-family:'Open Sans Condensed', sans-serif;
+    position:relative;
+}
+
+body{
+    background:linear-gradient(to right,lightgray,silver)
+}
+
+h1{
+    font-size:65px;
+    letter-spacing:5px;
+    text-align:center;
+    transition:1s ease;
+}
+
+
+
+h2{
+    text-align:center;
+    font-size:40px;
+}
+
+.content{
+    width:100%;
+    height:50vh;
+    align-items:center;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+
+.cake{
+    margin:0 auto;
+    height:70px;
+    background:white;
+    border-radius:5%;
+    border:1px solid black;
+  
+}
+
+.cake1{width:25%}
+
+.cake2{width:45%;background:rgb(224, 110, 17)}
+
+.cake3{width:65%;background:white}
+
+.cake4{width:85%;background:green}
+
+
+.candlerow{
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    width:25%;
+}
+
+.candle{
+    width:10px;
+    height:75px;
+    outline:1px solid black;
+    background:green;
+}
+
+.candle:nth-child(2), .candle:nth-child(5){
+    background:white
+}
+
+.candle:nth-child(3), .candle:nth-child(6){
+    background:orange;
+}
+
+.flame{
+    border-radius:50%;
+    height:20px;
+    width:8px;
+    border:1px solid black;
+    top:-20px;
+    transition:1s ease;
+    background:linear-gradient(rgb(180, 39, 39),rgb(194, 134, 23));
+    animation:flicker 2s infinite
+}
+
+.flame1{animation-delay:.5s}
+.flame2{animation-delay:.25s}
+
+.flame4{animation-delay:.5s}
+.flame5{animation-delay:.25s}
+.flame6{animation-delay:.5s}
+
+@keyframes flicker{
+     0%{transform:rotate(-35deg)rotate(0deg);transform-origin:bottom};
+     50%{transform:rotate(45deg);transform-origin:bottom};
+    100%{transform:rotate(75deg);transform-origin:bottom}; 
+}
+
+
+.cakeHeader{
+    width:100%;
+    height:50vh;
+    display:flex;
+    font-size:75px;
+    letter-spacing:5px;
+    border-radius:50%;
+    border:1px solid black;
+
+}
+
+
+
+.cakeHeader .rotate{
+    height:100%;
+    width:100%;
+    text-align:center;
+     position:absolute; 
+    top:0;
+    --rotate:0;
+    transform:rotate(calc(var(--rotate)*1deg))
+ 
+}
+
+.rotate{
+    transition:1s ease;
+}
+
+.green{
+    color:green;
+}
+
+ .cakeHeader .rotate1{--rotate:30}
+.cakeHeader .rotate2{--rotate:60}
+.cakeHeader .rotate3{--rotate:90}
+.cakeHeader .rotate4{--rotate:120}
+.cakeHeader .rotate5{--rotate:150}
+.cakeHeader .rotate6{--rotate:180} 
+.cakeHeader .rotate7{--rotate:200} 
+.cakeHeader .rotate8{--rotate:220} 
+.cakeHeader .rotate9{--rotate:240} 
+.cakeHeader .rotate10{--rotate:260} 
+.cakeHeader .rotate11{--rotate:280} 
+.cakeHeader .rotate12{--rotate:300} 
+.cakeHeader .rotate13{--rotate:330} 
+
+
+
+@keyframes spin{
+   100%{transform:rotate(90deg)}
+   20%{transform:rotate(180deg)}
+   30%{transform:rotate(270deg)}
+   40%{transform:rotate(360deg)}
+   50%{transform:rotate(180deg)}
+   60%{transform:rotate(0deg)}
+   70%{transform:rotate(180deg)}
+   80%{transform:rotate(90deg)}
+   90%{transform:rotate(270deg)}
+   100%{transform:rotate(180deg)}
+}
+
+
+.gif{
+    left:20%;
+}
+
+.output{
+    left:30%;
+}
+
+
+
+
+
